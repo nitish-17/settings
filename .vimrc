@@ -6,16 +6,22 @@ Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'morhetz/gruvbox'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
+Plug 'sdothum/vim-colors-duochrome'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/limelight.vim'
 call plug#end()
 
-set hid nobk nowb noswf bs=2 ru ls=2 nohls ai si is vb ic scs nowrap nu wmnu spr sb
+set hid bs=2 ar
+set nobk nowb noswf
+set wmnu wim=longest:full,full vb ru ls=2 spr sb
+set ai si is  ic scs
+set cb+=unnamed,unnamedplus
+set enc=utf-8
 set sw=4 ts=4 noet sta sts=4
-set encoding=utf-8
-set clipboard+=unnamed,unnamedplus
-let &showbreak = '└→ '
+set nowrap nu nohls tw=80 so=7
+let &showbreak = '+++ '
 set list listchars=tab:»\ ,trail:•,extends:→,precedes:←
 
 set guioptions-=m
@@ -38,9 +44,12 @@ let g:vimtex_compiler_latexmk = {
     \}
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
-colo gruvbox
+colo duochrome
+set bg=light
+let g:goyo_width=100
 
 ino jf <esc>
+nmap <space><space> gqiP
 nno <space>/ :nohls<cr>
 nno <space>c :close<CR>
 nno <space>d :Bclose<CR>
@@ -60,11 +69,15 @@ nno <F2> :bn<cr>
 nno <F3> :bp<cr>
 nno <F5> :w\|so\ %<cr>
 nno <F6> :plug
+nno <F11> :Goyo<cr>
+nno <F12> :Limelight!!<cr>
 
 nno <c-h> <c-w>h
 nno <c-j> <c-w>j
 nno <c-k> <c-w>k
 nno <c-l> <c-w>l
 nno <c-w> <c-w><c-w>
+
+ino <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 so ~/.vimrc_more
