@@ -7,6 +7,8 @@ Plug 'sdothum/vim-colors-duochrome'
 Plug 'preservim/nerdtree'
 call plug#end()
 
+filetype plugin indent on
+syntax enable
 set hid bs=2 ar
 set nobk nowb noswf
 set wmnu wim=longest:full,full vb ru ls=2 spr sb
@@ -14,7 +16,7 @@ set ai si is  ic scs
 set cb+=unnamed,unnamedplus
 set enc=utf-8
 set sw=4 ts=4 noet sta sts=4
-set nowrap nu nohls tw=80 so=5
+set nowrap nu rnu nohls tw=80 so=5
 set spelllang=en_us
 let &showbreak = '+++ '
 "trail:•,
@@ -61,10 +63,6 @@ nno <F2> :bp<cr>
 nno <F3> :bn<cr>
 nno <F5> :w\|so\ %<cr>
 nno <F6> :plug
-
 nno <c-w> <c-w>w
 
-ino <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-ino <c-j> <c-r>*
 
-so ~/.vimrc_more
