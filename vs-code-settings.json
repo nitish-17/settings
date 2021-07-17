@@ -1,0 +1,5 @@
+{
+    "telemetry.enableTelemetry": false,
+    "security.workspace.trust.enabled": false,
+    "terminal.integrated.fontFamily": "Cascadia Code PL"
+}
