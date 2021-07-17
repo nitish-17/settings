@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaults
 [
     {
         "key": "ctrl+o",
@@ -5,14 +6,22 @@
     },
     {
         "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
-    },
-    {
-        "key": "ctrl+p",
         "command": "workbench.action.showCommands"
     },
     {
-        "key": "ctrl+shift+p",
-        "command": "-workbench.action.showCommands"
+        "key": "ctrl+j",
+        "command": "extension.aceJump"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "extension.aceJump.multiChar"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "extension.aceJump.line"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "extension.aceJump.selection"
     }
 ]
