@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
     {
         "key": "ctrl+o",
@@ -10,18 +9,10 @@
     },
     {
         "key": "ctrl+j",
-        "command": "extension.aceJump"
+        "command": "vim.disableExtension"
     },
     {
-        "key": "ctrl+b",
-        "command": "extension.aceJump.multiChar"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "extension.aceJump.line"
-    },
-    {
-        "key": "ctrl+m",
-        "command": "extension.aceJump.selection"
+        "key": "ctrl+j",
+        "command": "toggleVim"
     }
 ]
