@@ -1,5 +1,34 @@
 {
     "telemetry.enableTelemetry": false,
     "security.workspace.trust.enabled": false,
-    "terminal.integrated.fontFamily": "Cascadia Code PL"
+    "terminal.integrated.fontFamily": "Cascadia Code PL",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "f"],
+            "after": ["<Esc>"]
+        },
+        {
+            "before": ["f", "j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "j"],
+            "after": ["o", "<Esc>"]
+        },
+        {
+            "before": ["<leader>", "k"],
+            "after": ["O", "<Esc>"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": [":w"]
+        }
+    ],
+    "vim.leader": "<space>"
 }
