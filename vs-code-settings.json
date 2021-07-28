@@ -6,6 +6,7 @@
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
+    "vim.hlsearch": false,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "f"],
@@ -26,9 +27,30 @@
             "after": ["O", "<Esc>"]
         },
         {
+            "before": ["ctrl+w"],
+            "after": ["ctrl+w","w"]
+        },
+        {
+            "before": ["<space>", "f"],
+            "commands": ["workbench.action.toggleZenMode"]
+        },
+        {
             "before": ["<leader>", "w"],
             "commands": [":w"]
+        },
+        {
+            "before": ["<space>", "d"],
+            "commands": [":bd"]
         }
     ],
-    "vim.leader": "<space>"
+    "vim.handleKeys": {
+        "<C-k>": false,
+        "<C-a>": false
+    },
+    "vim.leader": "<space>",
+    "editor.minimap.enabled": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.overviewRulerBorder": false,
+    "explorer.confirmDragAndDrop": false
 }

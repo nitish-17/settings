@@ -9,10 +9,6 @@
     },
     {
         "key": "ctrl+j",
-        "command": "vim.disableExtension"
-    },
-    {
-        "key": "ctrl+j",
         "command": "toggleVim"
     }
 ]
